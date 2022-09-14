@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct PassingDataDemoApp: App {
+    @State var textData = "initial value"
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView(textData: $textData)
+            ContentView(textData: "Initial")
+
         }
     }
 }
